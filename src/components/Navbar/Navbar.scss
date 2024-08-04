@@ -1,0 +1,22 @@
+@import '../../template';
+@import '../../variables';
+
+.nav {
+  display: flex;
+  @include flex(row, space-around, center);
+  min-width: 40%;
+  .nav__item {
+    @include font($font1, 1.5rem, $colorTextDark, 700);
+    text-decoration: none;
+    @include _mobile {
+      font-size: 1.1rem;
+    }
+    &:hover {
+      color: $colorTextMedium;
+    }
+  }
+  @include _tablet {
+    margin-bottom: 1%;
+    width: 100%;
+  }
+}

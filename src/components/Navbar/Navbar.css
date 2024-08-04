@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap");
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 40%;
+}
+.nav .nav__item {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  color: #00338b;
+  font-weight: 700;
+  text-decoration: none;
+}
+@media (max-width: 425px) {
+  .nav .nav__item {
+    font-size: 1.1rem;
+  }
+}
+.nav .nav__item:hover {
+  color: #5386cc;
+}
+@media (max-width: 768px) {
+  .nav {
+    margin-bottom: 1%;
+    width: 100%;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,25 @@
+@import '../../template';
+@import '../../variables';
+
+.header {
+  grid-area: 1/1/2/2;
+  display: flex;
+  @include flex(row, space-between, center);
+  margin: 0 1%;
+  .header__image-wrap {
+    padding: 0.05rem;
+    max-width: 100%;
+    @include _tablet {
+      max-height: 70%;
+    }
+    .header__image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  @include _tablet {
+    @include flex(column, space-around, center);
+  }
+}

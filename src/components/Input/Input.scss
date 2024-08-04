@@ -1,0 +1,56 @@
+@import '../../template';
+@import '../../variables';
+
+.input {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  align-items: center;
+  padding: 0.7rem 0.5rem;
+  border-top: 1px solid $colorBorderDark;
+  border-bottom: 1px solid $colorBorderDark;
+  background-color: $colorBackgroundInput;
+  @include _tablet {
+    padding: 0.5rem 0.2rem;
+    border-top: 1.5px solid $colorBorderDark;
+    border-bottom: 1.5px solid $colorBorderDark;
+  }
+  .input__word {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
+    @include _intermediate {
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      gap: 0.15rem;
+    }
+    .input__item {
+      width: 90%;
+      border: 1px solid $colorTextDark;
+      border-radius: 0.4rem;
+      @include font($font1, 1.4rem, $colorTextDark, 600);
+      text-align: center;
+      @include _laptop {
+        font-size: 1.15rem;
+      }
+      @include _tablet {
+        font-size: 1rem;
+      }
+      @include _mobile {
+        font-size: 0.8rem;
+      }
+    }
+    .empty {
+      border: 1.5px solid red;
+      outline: none;
+      background-color: $colorEmptyInput;
+    }
+  }
+  .input__buttons {
+    display: flex;
+    @include flex(row, space-around, center);
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    @include _mobile {
+      gap: 0.1rem;
+    }
+  }
+}

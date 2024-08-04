@@ -1,0 +1,77 @@
+@import '../../template';
+@import '../../variables';
+
+.imagebtn {
+  height: 100%;
+  width: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+  .imagebtn__imagewrap {
+    display: flex;
+    @include flex(column, center, center);
+    padding: 0.05rem;
+    max-width: 100%;
+    .imagebtn__image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.sliderBtn {
+  background-color: transparent;
+  border: none;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+.delete,
+.cancel,
+.save,
+.edit {
+  max-width: 44px;
+  border-radius: 0.3rem;
+}
+
+.delete {
+  background-color: $colorBtnDelete;
+  border: 0.05rem solid $colorBtnDeleteBorder;
+  &:hover {
+    background-color: $colorBtnDeleteLight;
+  }
+}
+.cancel {
+  background-color: $colorBtnCancel;
+  border: 0.05rem solid $colorBtnCancelBorder;
+  &:hover {
+    background-color: $colorBtnCancelLight;
+  }
+}
+.edit {
+  background-color: $colorBtnEdit;
+  border: 0.05rem solid $colorBtnEditBorder;
+  &:hover {
+    background-color: $colorBtnEditLight;
+  }
+}
+.save {
+  background-color: $colorBtnSave;
+  border: 0.05rem solid $colorBtnSaveBorder;
+  &:hover {
+    background-color: $colorBtnSaveLight;
+  }
+  &:disabled {
+    background-color: $colorDisabled;
+    border: 0.05rem solid $colorDisabledBorder;
+    cursor: none;
+    &:hover {
+      transform: scale(1);
+      cursor: none;
+    }
+  }
+}

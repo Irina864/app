@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap");
+.slider {
+  display: grid;
+  grid-template-rows: 15% 85%;
+  height: 100%;
+}
+@media (max-width: 425px) {
+  .slider {
+    grid-template-rows: 10% 90%;
+  }
+}
+.slider .counter {
+  grid-area: 1/1/2/2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 10%;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 2.5rem;
+  color: #5386cc;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .slider .counter {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 580px) {
+  .slider .counter {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 0;
+  }
+}
+@media (max-width: 425px) {
+  .slider .counter {
+    font-size: 1.5rem;
+  }
+}
+.slider .slider__box {
+  grid-area: 2/1/3/2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2px;
+}
+.slider .slider__box .slider__cardchangerbtn {
+  height: 80%;
+}/*# sourceMappingURL=Slider.css.map */

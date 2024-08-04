@@ -1,0 +1,44 @@
+@import '../../template';
+@import '../../variables';
+
+.btn {
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.4rem;
+  @include font($font1, 0.95rem, $colorTextLight, 600);
+  &:hover {
+    cursor: pointer;
+    color: $colorTextDark;
+  }
+  &:disabled {
+    background-color: $colorDisabled;
+    border: 0.15rem solid $colorDisabledBorder;
+    color: $colorTextLight;
+    cursor: none;
+  }
+}
+.show {
+  @include font($font2, 1.5rem, $colorTextLight, 600);
+  padding: 0.5rem 1rem;
+  background-color: $colorBackgroundMedium;
+  border: 0.15rem solid $colorBackgroundDark;
+  border-radius: 13px;
+  &:hover {
+    background-color: $colorBackgroundLight;
+  }
+  @include _tablet {
+    font-size: 1rem;
+  }
+}
+.know {
+  @include font($font2, 1.35rem, $colorTextLight, 600);
+  padding: 0.5rem 1rem;
+  background-color: $colorBtnKnownWord;
+  border: 0.15rem solid $colorBtnKnownWordBorder;
+  border-radius: 13px;
+  &:hover {
+    background-color: $colorBtnKnownWordLight;
+  }
+  @include _tablet {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../template';
+@import '../../variables';
+
+.App {
+  display: grid;
+  grid-template-rows: 150px minmax(0, 1fr);
+  margin: 0 auto;
+  max-width: 1920px;
+  min-height: 100vh;
+  @include _mobile {
+    grid-template-rows: 100px 1fr;
+  }
+}
