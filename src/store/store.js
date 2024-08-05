@@ -15,7 +15,7 @@ class WordStore {
     this.error = false;
     try {
       const response = await fetch(
-        `/api/words`
+        `https://itgirlschool.justmakeit.ru//api/words`
         //  `/api/words`
       );
       console.log(response);
@@ -36,7 +36,7 @@ class WordStore {
     this.loading = true;
     try {
       const response = await fetch(
-        `/api/words/add`,
+        `https://itgirlschool.justmakeit.ru//api/words/add`,
         // `/api/words/add`,
         {
           method: 'POST',
@@ -62,7 +62,7 @@ class WordStore {
     this.loading = true;
     try {
       const response = await fetch(
-        `/api/words/${updatedInfo.id}/update`,
+        `https://itgirlschool.justmakeit.ru//api/words/${updatedInfo.id}/update`,
         // `/api/words/${updatedInfo.id}/update`,
         {
           method: 'POST',
@@ -90,7 +90,7 @@ class WordStore {
     this.loading = true;
     try {
       const response = await fetch(
-        `/api/words/${id}/delete`,
+        `https://itgirlschool.justmakeit.ru//api/words/${id}/delete`,
         // `/api/words/${id}/delete`,
         {
           method: 'POST',
