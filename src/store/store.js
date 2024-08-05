@@ -15,7 +15,8 @@ class WordStore {
     this.error = false;
     try {
       const response = await fetch(
-        `http://itgirlschool.justmakeit.ru/api/words`
+        `/api/words`
+        //  `/api/words`
       );
       if (!response.ok) {
         throw new Error('Network response was not ok');
@@ -34,7 +35,8 @@ class WordStore {
     this.loading = true;
     try {
       const response = await fetch(
-        `http://itgirlschool.justmakeit.ru/api/words/add`,
+        `/api/words/add`,
+        // `/api/words/add`,
         {
           method: 'POST',
           headers: {
@@ -59,7 +61,8 @@ class WordStore {
     this.loading = true;
     try {
       const response = await fetch(
-        `http://itgirlschool.justmakeit.ru/api/words/${updatedInfo.id}/update`,
+        `/api/words/${updatedInfo.id}/update`,
+        // `/api/words/${updatedInfo.id}/update`,
         {
           method: 'POST',
           headers: {
@@ -86,7 +89,8 @@ class WordStore {
     this.loading = true;
     try {
       const response = await fetch(
-        `http://itgirlschool.justmakeit.ru/api/words/${id}/delete`,
+        `/api/words/${id}/delete`,
+        // `/api/words/${id}/delete`,
         {
           method: 'POST',
           headers: {

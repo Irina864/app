@@ -42,5 +42,17 @@
   "proxy": "http://itgirlschool.justmakeit.ru",
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.24.7"
-  }
+  },
+  "redirects": [
+    {
+      "from": "/old-path",
+      "to": "/new-path",
+      "status": 301
+    },
+    {
+      "from": "/another-old-path",
+      "to": "/another-new-path",
+      "status": 302
+    }
+  ]
 }
